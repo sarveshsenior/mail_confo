@@ -29,9 +29,9 @@ if (isset($_POST['email'])) {
     $mail->Host = 'smtp.gmail.com';
     $mail->Port = 587;
     $mail->SMTPAuth = true;
-    $mail->Username = 'sarveshpadma.13@gmail.com'; // Your Gmail email address
-    $mail->Password = 'sarvesh@1316'; // Your Gmail password
-    $mail->setFrom('sarveshpadma.13@gmail.com', 'sarvesh');
+    $mail->Username = 'your mail '; // Your Gmail email address
+    $mail->Password = 'password'; // Your Gmail password
+    $mail->setFrom('your mail', 'sarvesh');
     $mail->addAddress($email);
     $mail->Subject = $subject;
     $mail->msgHTML($message);

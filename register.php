@@ -31,7 +31,7 @@ if (isset($_POST['email'])) {
     $mail->SMTPAuth = true;
     $mail->Username = 'your mail '; // Your Gmail email address
     $mail->Password = 'password'; // Your Gmail password
-    $mail->setFrom('your mail', 'sarvesh');
+    $mail->setFrom('your mail', 'name');
     $mail->addAddress($email);
     $mail->Subject = $subject;
     $mail->msgHTML($message);
